@@ -1,0 +1,28 @@
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" (click)="toggleComp(1)">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" (click)="toggleComp(2)">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" (click)="toggleComp(3)">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" (click)="toggleComp(4)">
+      <mat-icon>people</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" (click)="toggleComp(5)">
+      <mat-icon>call</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <app-comp1 *ngIf="comp1"></app-comp1>
+  <app-comp2 *ngIf="comp2"></app-comp2>
+  <app-comp3 *ngIf="comp3"></app-comp3>
+  <app-comp4 *ngIf="comp4"></app-comp4>
+  <app-comp5 *ngIf="comp5"></app-comp5>
